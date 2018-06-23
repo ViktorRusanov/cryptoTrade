@@ -40,10 +40,9 @@ function* authorize(login, password) {
 function* registrationFlow(action) {
   try {
     const { payload: { login, password } } = action;
-    const token = yield call(api.registration, login, password);
-    yield call(api.setTokenApi, { token });
-    yield put(loginSuccess, token);
-    return token;
+    const { data: { jwt }} = yield call(api.registration, login, password);
+    yield call(api.setTokenApi, { jwt });
+    yield put(loginSuccess());
   } catch (e) {
     yield put({ type: 'LOGIN_ERROR', e });
   }
