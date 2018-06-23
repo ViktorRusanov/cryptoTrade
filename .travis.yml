@@ -12,3 +12,8 @@ install:
 
 script:
   - npm build
+
+deploy:
+  provider: heroku
+  api_key: $HEROKU_KEY
+  app: cripto-trade
