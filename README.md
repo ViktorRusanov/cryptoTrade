@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ViktorRusanov/criptoTrade.svg?branch=master)](https://travis-ci.org/ViktorRusanov/criptoTrade)
+[![Build Status](https://travis-ci.org/ViktorRusanov/cryptoTrade.svg?branch=master)](https://travis-ci.org/ViktorRusanov/cryptoTrade)
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
